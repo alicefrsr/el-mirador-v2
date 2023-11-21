@@ -51,6 +51,10 @@
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
+  .notice {
+    width: 80rem;
+    padding: 3.2rem;
+  }
 }
 
 /**************************/
@@ -61,6 +65,9 @@
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
+  }
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero {
@@ -150,7 +157,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .grid--3-cols,
+  /* .grid--3-cols, */
   .grid--4-cols {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -181,6 +188,10 @@
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
+  }
+  .notice {
+    width: 60rem;
+    padding: 3.2rem;
   }
 }
 
@@ -270,6 +281,10 @@
     font-size: 1.8rem;
     line-height: 1.6;
     font-weight: 600;
+  }
+  .notice {
+    width: 40rem;
+    padding: 3.2rem;
   }
 }
 

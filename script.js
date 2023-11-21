@@ -19,33 +19,34 @@ btnNavEl.addEventListener('click', function () {
 // Smooth scrolling animation
 // (with css only just add scroll-behavior: smooth; in html element) // now works on Safari
 
-// const allLinks = document.querySelectorAll('a:link');
+const allLinks = document.querySelectorAll('a:link');
+
+// focus/active state works but external links will not work with this (preventDefault)
 // allLinks.forEach(function (link) {
-//   link.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     const href = link.getAttribute('href');
+// link.addEventListener('click', function (e) {
+// e.preventDefault();
+// const href = link.getAttribute('href');
 
-//     // if (href === '#')
-//     //   // Scroll back to top
-//     //   window.scrollTo({
-//     //     top: 0,
-//     //     behavior: 'smooth',
-//     //   });
+// if (href === '#')
+//   // Scroll back to top
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth',
+//   });
 
-//     // Scroll to other links
-//     if (href !== '#' && href.startsWith('#')) {
-//       const sectionEl = document.querySelector(href);
-//       sectionEl.scrollIntoView({ behavior: 'smooth' });
-//     }
+// Scroll to other links
+// if (href !== '#' && href.startsWith('#')) {
+//   const sectionEl = document.querySelector(href);
+//   sectionEl.scrollIntoView({ behavior: 'smooth' });
+// }
 
-//     // Close mobile navigation
+// Close mobile navigation
 //     if (link.classList.contains('main-nav-link'))
 //       headerEl.classList.toggle('nav-open');
 //   });
 // });
 
-// FIX Mobile nav only
-const allLinks = document.querySelectorAll('a:link');
+// FIX Mobile nav only, external links work, but not focus/active state
 allLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
     // Close mobile navigation
