@@ -19,26 +19,35 @@ btnNavEl.addEventListener('click', function () {
 // Smooth scrolling animation
 // (with css only just add scroll-behavior: smooth; in html element) // now works on Safari
 
-const allLinks = document.querySelectorAll('a:link');
+// const allLinks = document.querySelectorAll('a:link');
+// allLinks.forEach(function (link) {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute('href');
 
+//     // if (href === '#')
+//     //   // Scroll back to top
+//     //   window.scrollTo({
+//     //     top: 0,
+//     //     behavior: 'smooth',
+//     //   });
+
+//     // Scroll to other links
+//     if (href !== '#' && href.startsWith('#')) {
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({ behavior: 'smooth' });
+//     }
+
+//     // Close mobile navigation
+//     if (link.classList.contains('main-nav-link'))
+//       headerEl.classList.toggle('nav-open');
+//   });
+// });
+
+// FIX Mobile nav only
+const allLinks = document.querySelectorAll('a:link');
 allLinks.forEach(function (link) {
   link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const href = link.getAttribute('href');
-
-    if (href === '#')
-      // Scroll back to top
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-
-    // Scroll to other links
-    if (href !== '#' && href.startsWith('#')) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: 'smooth' });
-    }
-
     // Close mobile navigation
     if (link.classList.contains('main-nav-link'))
       headerEl.classList.toggle('nav-open');

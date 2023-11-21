@@ -75,15 +75,15 @@
       </section>
 
       <!-- SECTION ABOUT -->
-      <section class="section-about" id="about">
+      <section class="section-about pattern-red" id="about">
         <div class="container">
           <h3 class="sr-only">About us</h3>
         </div>
 
-        <div class="container grid grid--2-cols grid--center-v">
+        <div class="container white grid grid--2-cols grid--center-v">
           <!-- FIRST SUB-SECTION: ABOUT US -->
           <div class="about-text-box">
-            <h4 class="heading-subsection">Welcome !</h4>
+            <h4 class="heading-subsection pad-left">Welcome !</h4>
             <p class="about-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
               impedit eveniet modi recusandae, eos saepe numquam distinctio
@@ -91,7 +91,6 @@
               beatae. Facilis quisquam incidunt aut!
             </p>
           </div>
-
           <div class="about-img-box">
             <img
               src="img/placeholders/interior-about.jpg"
@@ -108,8 +107,8 @@
               alt="nicely laid out table"
             />
           </div>
-          <div class="events-text-box">
-            <h4 class="heading-subsection">Special events</h4>
+          <div class="events-text-box margin-bottom-md">
+            <h4 class="heading-subsection pad-left">Special events</h4>
             <p class="about-description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
               maxime cupiditate exercitationem ut aliquam ducimus, dicta saepe
@@ -150,7 +149,7 @@
         <div class="container grid margin-bottom-md">
           <div>
             <div class="menu-col">
-              <img src="/img/placeholders/menu.jpg" alt="" />
+              <img class="menu-img" src="/img/placeholders/menu.jpg" alt="" />
 
               <!-- <h4>Tapas</h4> -->
               <!-- <ul class="list">
@@ -237,7 +236,7 @@
       </section>
 
       <!-- SECTION TESTIMONIALS -->
-      <section class="section-testimonials" id="testimonials">
+      <section class="section-testimonials pattern-green" id="testimonials">
         <div class="container testimonials-container">
           <h3 class="sr-only">Testimonials</h3>
 
@@ -295,7 +294,21 @@
             </div>
           </div>
 
-          <div class="testimonials grid grid--3-cols">
+          <div class="testimonials grid grid--2-cols">
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                Todo fabuloso... el servicio, la atención, la comida, el precio,
+                el local.... Completamente recomendable
+              </blockquote>
+              <p class="testimonial-name">&mdash; Azucena Franco</p>
+              <div class="testimonial-stars">
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+              </div>
+            </figure>
             <figure class="testimonial">
               <blockquote class="testimonial-text">
                 Restaurante excelente calidad precio. Buena atención. Buenos
@@ -314,10 +327,11 @@
 
             <figure class="testimonial">
               <blockquote class="testimonial-text">
-                Los dueños súper simpáticos y la comida deliciosa, repetiremos
-                fijo.
+                La comida riquísima y en abundancia, gran variedad de platos a
+                elegir. Muy buen precio, el lugar precioso, y el trato
+                inmejorable. No hay duda en que volveremos.
               </blockquote>
-              <p class="testimonial-name">&mdash; Anna Imbre</p>
+              <p class="testimonial-name">&mdash; Eva Marco</p>
               <div class="testimonial-stars">
                 <ion-icon class="testimonial-star" name="star"></ion-icon>
                 <ion-icon class="testimonial-star" name="star"></ion-icon>
@@ -341,17 +355,48 @@
                 <ion-icon class="testimonial-star" name="star"></ion-icon>
               </div>
             </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                Espectacular, en comida, muy buen trato, los propietarios muy
+                familiares, rapidez y muy economico lo recomiendo 100%.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Javier López</p>
+              <div class="testimonial-stars">
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+              </div>
+            </figure>
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                Como siempre trato inmejorable, raciones más que abundantes. Si
+                vienes a Paracuellos de Jiloca tienes que venir aquí. También
+                tienen bocadillos para llevar. No les doy un 10 porque solo me
+                deja un cinco.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Sara “Sarica” Garrido</p>
+              <div class="testimonial-stars">
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+                <ion-icon class="testimonial-star" name="star"></ion-icon>
+              </div>
+            </figure>
           </div>
         </div>
       </section>
 
       <!-- SECTION INFO -->
-      <section class="section-info margin-bottom-md" id="info">
+      <section class="section-info" id="info">
         <h3 class="sr-only">Where to find us</h3>
-        <div class="container grid grid--2-cols info">
+        <div class="container pad grid grid--2-cols info">
           <div class="info-box">
             <div class="opening-times">
-              <h4 class="">Opening times</h4>
+              <h4 class="heading-subsection">Opening times</h4>
               <table>
                 <tr>
                   <td class="day">Monday</td>
@@ -385,7 +430,7 @@
             </div>
 
             <div>
-              <h4 class="">How to find us</h4>
+              <h4 class="heading-subsection">How to find us</h4>
               <ul class="info-list">
                 <li class="list-item">
                   <ion-icon
